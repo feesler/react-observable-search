@@ -9,13 +9,13 @@ import {
   switchMap,
   catchError,
 } from 'rxjs/operators';
-import { CHANGE_SEARCH_FIELD, SEARCH_SKILLS_REQUEST } from '../actions/actionTypes';
+import { CHANGE_SEARCH_FIELD, SEARCH_SKILLS_REQUEST } from '../actions/actionTypes.js';
 import {
   searchSkillsRequest,
   searchSkillsSuccess,
   searchSkillsFailure,
   resetSkills,
-} from '../actions/actionCreators';
+} from '../actions/actionCreators.js';
 
 export const changeSearchEpic = (action$) => action$.pipe(
   ofType(CHANGE_SEARCH_FIELD),

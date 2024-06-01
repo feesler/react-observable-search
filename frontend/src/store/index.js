@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware, compose, } from 'redux';
 import { combineEpics, createEpicMiddleware } from 'redux-observable';
-import skillsReducer from '../reducers/skills';
-import { changeSearchEpic, searchSkillsEpic } from '../epics';
+import skillsReducer from '../reducers/skills.js';
+import { changeSearchEpic, searchSkillsEpic } from '../epics/index.js';
 
 const reducer = combineReducers({
   skills: skillsReducer,
